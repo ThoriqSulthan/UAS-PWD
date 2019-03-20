@@ -114,8 +114,8 @@
 			}
 		}
 
-		public function  detail($id) {
-			$makanan = Makanan::find($id);
+		public function detail($id) {
+			$makanan = \App\Makanan::find($id);
 
 			if (empty($makanan)) {
 				return [
@@ -128,8 +128,7 @@
 
 			return [
 				'status' => 'success',
-				'result' => '$makanan'
+				'result' => $makanan
 			];
 		}
 	}
-?>

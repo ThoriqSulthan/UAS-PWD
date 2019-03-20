@@ -11,4 +11,3 @@
 			'nama_makanan', 'harga', 'qty'
 		];
 	}
-?>

@@ -15,8 +15,8 @@ $router->get('/', function () use ($router) {
     return $router->app->version();
 });
 
-$router->post('/makanan', 'MakananController@create');
-$router->get('/makanan', 'MakananController@read');
-$router->post('/makanan/{id}', 'MakananController@update');
-$router->delete('/makanan/{id}', 'MakananController@delete');
+$router->post('makanan', 'MakananController@create');
+$router->get('makanan', 'MakananController@read');
+$router->post('makanan/{id}', 'MakananController@update');
 $router->get('makanan/{id}', 'MakananController@detail');
+$router->delete('makanan/{id}', 'MakananController@delete');
